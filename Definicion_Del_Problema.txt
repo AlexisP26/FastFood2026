@@ -1,0 +1,116 @@
+📌 1️⃣ Definición del problema
+
+Desarrollar un sistema en consola para la gestión de pedidos de un restaurante de comidas rápidas, aplicando Programación Orientada a Objetos.
+
+El sistema debe permitir administrar pedidos, controlar su estado y consultar información básica de ventas.
+
+📌 2️⃣ Requerimientos Funcionales (RF)
+
+Son las acciones que el sistema debe poder realizar.
+
+RF1 – Crear pedido
+
+El sistema debe permitir registrar un nuevo pedido con:
+
+Tipo de producto
+
+Tamaño
+
+Cantidad
+
+Precio unitario
+
+Número de pedido automático
+
+Estado inicial = Pendiente
+
+RF2 – Calcular total
+
+El sistema debe calcular automáticamente el total del pedido:
+
+total = cantidad × precio_unitario
+RF3 – Buscar pedido
+
+El sistema debe permitir buscar un pedido por su número.
+
+RF4 – Mostrar pedido
+
+El sistema debe mostrar la información completa de un pedido:
+
+Número
+
+Tipo
+
+Tamaño
+
+Cantidad
+
+Precio unitario
+
+Total
+
+Estado
+
+RF5 – Mostrar todos los pedidos
+
+El sistema debe listar todos los pedidos registrados.
+
+RF6 – Cambiar estado del pedido
+
+El sistema debe permitir cambiar el estado de un pedido:
+
+Pendiente
+
+Atendido
+
+RF7 – Eliminar pedido
+
+El sistema debe permitir eliminar un pedido por número.
+
+📌 3️⃣ Requerimientos No Funcionales (RNF)
+
+Son condiciones de calidad del sistema.
+
+RNF1
+
+El sistema debe estar desarrollado en Python utilizando POO.
+
+RNF2
+
+Debe ejecutarse en consola.
+
+RNF3
+
+Debe manejar errores de entrada de datos (validaciones).
+
+RNF4
+
+El código debe estar organizado en clases con responsabilidades claras.
+
+📌 4️⃣ Entidades del sistema
+
+Con base en los requerimientos, se identifican:
+
+Pedido
+
+GestorPedidos
+
+📌 5️⃣ Reglas de negocio
+
+El número de pedido debe ser único.
+
+El total no puede ingresarse manualmente; debe calcularse.
+
+Un pedido eliminado no debe poder buscarse nuevamente.
+
+El estado inicial siempre es "Pendiente".
+
+🎯 Resultado
+
+Ahora sí tienes una base sólida para diseñar:
+
+Clase Pedido
+
+Clase GestorPedidos
+
+Interfaz (menu.py)
